@@ -71,11 +71,6 @@ const facilityList = [
     title: 'Car Rental Onsite',
     desc: 'Enjoy our onsite car rental service for a comfortable and convenient travel experience.',
   },
-  {
-    icon: 'fas fa-water-ladder fa-2xl',
-    title: 'Swimming Pool',
-    desc: 'Relax by our exclusive pool surrounded by serene views of Ladakh.',
-  },
 ]
 </script>
 

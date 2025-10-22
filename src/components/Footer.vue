@@ -6,7 +6,7 @@
         <h3 class="font-bold text-lg mb-4">ABOUT US</h3>
         <img src="../../public/remove background fr.png" alt="Hotel Logo" class="w-32 mb-4" />
         <p class="text-sm leading-relaxed">
-          We are one of the top hotels in Ladakh and are known for Comfort, Safety, Luxury
+          We are one of the top hotels in Bhaderwah and are known for Comfort, Safety, Luxury
           and Aesthetics in an affordable range.
         </p>
       </div>
