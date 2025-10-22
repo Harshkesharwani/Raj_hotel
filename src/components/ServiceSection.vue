@@ -109,8 +109,8 @@ const services = [
     badge: "Services",
     title: "Cozy Accommodation",
     description: [
-      "The Raj Hotel features duplex-style rooms designed with modern amenities and complimentary Wi-Fi for your comfort.",
-      "Upper-floor rooms offer breathtaking panoramic views of mountains and rivers."
+      "Experience comfort and elegance in our well-furnished duplex rooms with all modern amenities and complimentary Wi-Fi.",
+      "Enjoy peaceful views of Bhaderwah’s scenic hills and rivers from our upper-floor rooms."
     ],
     image:
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
@@ -122,8 +122,8 @@ const services = [
     badge: "Dining",
     title: "Scrumptious Cuisines",
     description: [
-      "The Raj Hotel is a benchmark for fine dining in Ladakh, offering multi-cuisine delights.",
-      "Enjoy our modern bar and discotheque for an unforgettable evening."
+      "Savor a wide range of multi-cuisine dishes prepared with care and local flavor at our in-house restaurant.",
+      "Unwind at our modern bar and lounge for a relaxing evening with friends and family."
     ],
     image:
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
@@ -133,10 +133,10 @@ const services = [
   {
     id: 3,
     badge: "Amenities",
-    title: "Dive Into Luxury: Our Pool",
+    title: "Relax & Rejuvenate",
     description: [
-      "Relax in our temperature-controlled pool with stunning mountain views.",
-      "Perfect for families, couples, or solo travelers seeking tranquility and comfort."
+      "Enjoy a refreshing dip in our temperature-controlled pool with beautiful valley views.",
+      "Perfect for families and couples seeking peace, comfort, and a touch of luxury."
     ],
     image:
       "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&h=600&fit=crop",

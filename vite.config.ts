@@ -7,7 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/Raj_hotel/',
+  // base: '/Raj_hotel/',
   plugins: [
     vue(),
     vueJsx(),

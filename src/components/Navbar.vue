@@ -40,7 +40,7 @@
 
         <ul class="hidden md:flex space-x-6">
           <li>
-            <a href="#home" :class="[
+            <RouterLink to="/" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'home'
                 ? 'text-blue-600 font-semibold after:w-full'
@@ -48,12 +48,11 @@
             ]" @click="setActive('home')">
               Home
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'home' ? 'w-full' : 'group-hover:w-full'"></span>
-            </a>
+                :class="activeLink === 'home' ? 'w-full' : ''"></span>
+            </RouterLink>
           </li>
-
           <li>
-            <a href="#about" :class="[
+            <RouterLink to="/about" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'about'
                 ? 'text-blue-600 font-semibold after:w-full'
@@ -62,11 +61,10 @@
               About Us
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
                 :class="activeLink === 'about' ? 'w-full' : ''"></span>
-            </a>
+            </RouterLink>
           </li>
-
           <li>
-            <a href="#amenities" :class="[
+            <RouterLink to="/amenities" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'amenities'
                 ? 'text-blue-600 font-semibold after:w-full'
@@ -75,11 +73,11 @@
               Amenities
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
                 :class="activeLink === 'amenities' ? 'w-full' : ''"></span>
-            </a>
+            </RouterLink>
           </li>
 
           <li>
-            <a href="#tariff" :class="[
+            <RouterLink to="/tariff" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'tariff'
                 ? 'text-blue-600 font-semibold after:w-full'
@@ -88,11 +86,11 @@
               Tariff
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
                 :class="activeLink === 'tariff' ? 'w-full' : ''"></span>
-            </a>
+            </RouterLink>
           </li>
 
           <li>
-            <a href="#gallery" :class="[
+            <RouterLink to="/gallery" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'gallery'
                 ? 'text-blue-600 font-semibold after:w-full'
@@ -101,11 +99,11 @@
               Gallery
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
                 :class="activeLink === 'gallery' ? 'w-full' : ''"></span>
-            </a>
+            </RouterLink>
           </li>
 
           <li>
-            <a href="#blog" :class="[
+            <RouterLink to="/blog" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'blog'
                 ? 'text-blue-600 font-semibold after:w-full'
@@ -114,10 +112,10 @@
               Blog
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
                 :class="activeLink === 'blog' ? 'w-full' : ''"></span>
-            </a>
+            </RouterLink>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="#rooms" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'rooms'
@@ -128,10 +126,10 @@
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
                 :class="activeLink === 'rooms' ? 'w-full' : ''"></span>
             </a>
-          </li>
+          </li> -->
 
           <li>
-            <a href="#contact" :class="[
+            <RouterLink to="/contact" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
               activeLink === 'contact'
                 ? 'text-blue-600 font-semibold after:w-full'
@@ -140,7 +138,7 @@
               Contact Us
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
                 :class="activeLink === 'contact' ? 'w-full' : ''"></span>
-            </a>
+            </RouterLink>
           </li>
         </ul>
       </div>
@@ -149,7 +147,7 @@
 </template>
 <script setup>
 import { ref } from "vue";
-
+import { RouterLink } from 'vue-router'
 const activeLink = ref("home");
 const setActive = (link) => (activeLink.value = link);
 </script>

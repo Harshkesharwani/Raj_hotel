@@ -59,8 +59,10 @@
       <!-- MAP -->
       <div>
         <h3 class="font-bold text-lg mb-4">DIRECTIONS</h3>
-        <iframe src="https://www.google.com/maps?q=Ladakh&output=embed" width="100%" height="150" style="border: 0"
-          loading="lazy" class="rounded-lg"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.2640787089814!2d75.6210803!3d33.0577417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391da9dc3e86a65b%3A0x224f5c324fde620f!2sRaj%20Hotel!5e0!3m2!1sen!2sin!4v1697342983459!5m2!1sen!2sin"
+          width="100%" height="200" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-lg"></iframe>
       </div>
     </div>
 

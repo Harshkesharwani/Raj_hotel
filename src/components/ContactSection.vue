@@ -6,16 +6,18 @@
       <!-- Left Section -->
       <div class="bg-gradient-to-br from-[#2C1A4D] to-[#5b3d8c] text-white p-10 flex flex-col justify-center">
         <p class="tracking-widest text-sm mb-3">CONTACT US</p>
-        <h3 class="text-2xl md:text-3xl font-bold mb-6 leading-snug">Years Of Warm Welcome...</h3>
+        <h3 class="text-2xl md:text-3xl font-bold mb-6 leading-snug">
+          Years of Warm Welcome...
+        </h3>
         <p class="text-sm mb-4">
-          We are one of the top hotels in Ladakh and we are known for Comfort, Safety, Luxury and Aesthetics in an
-          affordable range.
+          We are one of the top hotels in Bhaderwah, known for our blend of comfort, safety, and luxury — all at an
+          affordable price.
         </p>
         <p class="text-sm mb-6">
-          We always offer a level of warmth, comfort and personal service like never before. Our motto is ‘Atithi Devo
-          Bhava’ – indeed, we leave no stone unturned in giving very special treatment to all our guests. Our sole aim
-          is to rejuvenate your senses and make you revel in the tranquility including services, expansive picturesque
-          views.
+          At Raj Hotel, we believe in the spirit of ‘Atithi Devo Bhava’ — every guest is treated with utmost warmth and
+          care.
+          Whether you’re here for leisure or business, we strive to make your stay relaxing and memorable, surrounded by
+          the serene beauty of Bhaderwah.
         </p>
         <button
           class="bg-white text-[#2c1a4d] font-semibold px-6 py-2 rounded shadow hover:bg-gray-200 transition duration-300 w-fit">
