@@ -1,28 +1,33 @@
 <template>
-  <div class="min-h-screen bg-purple-950 flex-1 pt-34 pb-10">
+  <div class="min-h-screen bg-purple-950 flex-1 pt-28 pb-10">
     <!-- Amenities Header -->
-    <section class="py-12 px-6 md:px-16 text-white">
-      <h1 class="text-4xl font-extrabold mb-2">Amenities</h1>
-      <p class="mb-4 text-sm opacity-90">
-        Powerful Facilities with Best Quality of Services we provide Amazing rooms and Comfort.
+    <section class="py-12 px-6 md:px-16 text-white text-center md:text-left">
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">Amenities</h1>
+      <p class="mb-4 text-sm sm:text-base opacity-90 max-w-2xl mx-auto md:mx-0">
+        Powerful Facilities with Best Quality of Services — we provide amazing rooms and comfort.
       </p>
     </section>
 
     <!-- Facilities Card Grid -->
-    <div class="bg-white rounded-t-3xl px-12 py-10">
-      <h2 class="text-center text-2xl font-bold mb-8 text-gray-900">Popular Facilities</h2>
+    <div class="bg-white rounded-t-3xl px-6 sm:px-10 md:px-16 py-10">
+      <h2 class="text-center text-2xl sm:text-3xl font-bold mb-10 text-gray-900">
+        Popular Facilities
+      </h2>
 
       <transition-group name="fade-scale" tag="div"
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center place-items-center mx-auto px-64"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center mx-auto max-w-7xl"
         appear>
-        <div v-for="(facility, idx) in facilityList" :key="facility.title" class="bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center text-center space-y-2 w-64
-             transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-purple-50">
-          <span
-            class="flex items-center justify-center h-24 w-24 rounded-full bg-brand-purple text-purple-950 text-2xl mb-3 transition-colors duration-300 hover:bg-purple-950 hover:text-white">
+        <div v-for="(facility, idx) in facilityList" :key="facility.title" class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center space-y-3
+                 w-full sm:w-72 md:w-64 transform transition-transform duration-300
+                 hover:scale-105 hover:shadow-2xl hover:bg-purple-50">
+          <span class="flex items-center justify-center h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-purple-200
+                   text-purple-900 text-3xl mb-3 transition-all duration-300 hover:bg-purple-950 hover:text-white">
             <i :class="facility.icon"></i>
           </span>
-          <p class="font-semibold">{{ facility.title }}</p>
-          <p v-if="facility.desc" class="text-xs text-gray-500 mt-1">{{ facility.desc }}</p>
+          <p class="font-semibold text-base sm:text-lg text-gray-900">{{ facility.title }}</p>
+          <p v-if="facility.desc" class="text-xs sm:text-sm text-gray-500 leading-snug px-2">
+            {{ facility.desc }}
+          </p>
         </div>
       </transition-group>
     </div>
@@ -34,47 +39,47 @@ const facilityList = [
   {
     icon: 'fas fa-mug-hot fa-2xl',
     title: 'Free Complementary Drink (Kashmiri Kehwa)',
-    desc: '',
+    desc: 'A warm welcome drink served to every guest upon arrival.',
   },
   {
     icon: 'fas fa-wifi fa-2xl',
     title: 'Wi-Fi (Free)',
-    desc: '',
+    desc: 'Enjoy uninterrupted high-speed internet across the property.',
   },
   {
     icon: 'fas fa-bell-concierge fa-2xl',
     title: 'Room Service',
-    desc: '',
+    desc: '24x7 room service to make your stay more convenient and relaxing.',
   },
   {
     icon: 'fas fa-utensils fa-2xl',
-    title: 'Food & Drink',
-    desc: '',
+    title: 'Restaurant',
+    desc: 'Savor multi-cuisine delicacies crafted by expert chefs in our in-house restaurant.',
   },
   {
     icon: 'fas fa-headset fa-2xl',
     title: '24-Hour Front Desk',
-    desc: '',
+    desc: 'Friendly staff available around the clock for all your needs.',
   },
   {
     icon: 'fas fa-soap fa-2xl',
     title: 'Full-Service Laundry',
-    desc: '',
+    desc: 'Professional laundry and dry-cleaning services at your convenience.',
   },
   {
     icon: 'fas fa-child fa-2xl',
     title: 'Child-Friendly',
-    desc: 'We provide a family-friendly atmosphere with safety and world-class hospitality.',
+    desc: 'We provide a family-friendly atmosphere with safety and comfort.',
   },
   {
     icon: 'fas fa-car-side fa-2xl',
     title: 'Car Rental Onsite',
-    desc: 'Enjoy our onsite car rental service for a comfortable and convenient travel experience.',
+    desc: 'Enjoy our onsite car rental service for a convenient travel experience.',
   },
-]
+];
 </script>
 
-<style>
+<style scoped>
 .fade-scale-enter-active,
 .fade-scale-leave-active {
   transition: all 0.6s cubic-bezier(.68, -0.55, .27, 1.55);

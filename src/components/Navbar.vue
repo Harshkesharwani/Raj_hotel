@@ -5,28 +5,32 @@
       <div class="max-w-9/10 mx-auto px-4 flex justify-between items-center">
         <!-- Contact Info -->
         <div class="flex space-x-4">
-          <span class="flex items-center gap-1">
+          <!-- Email -->
+          <a href="mailto:rajhotel1976@gmail.com" class="flex items-center gap-1 hover:underline">
+            <!-- Show icon only on small screens -->
             <i class="fas fa-envelope"></i>
-            <a href="mailto:rajhotel1976@gmail.com" class="hover:underline">rajhotel1976@gmail.com</a>
-          </span>
-          <span class="flex items-center gap-1">
+            <span class="hidden sm:inline">rajhotel1976@gmail.com</span>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+918899830959" class="flex items-center gap-1 hover:underline">
             <i class="fas fa-phone"></i>
-            <a href="tel:+918899830959" class="hover:underline">+91 88998 30959</a>
-          </span>
+            <span class="hidden sm:inline">+91 88998 30959</span>
+          </a>
         </div>
 
         <!-- Social Links -->
-        <div class="flex space-x-4">
+        <div class="flex space-x-3">
           <!-- Facebook -->
           <a href="https://facebook.com" target="_blank"
-            class="flex items-center justify-center w-8 h-8 rounded-full bg-white text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
-            <i class="fab fa-facebook-f"></i>
+            class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+            <i class="fab fa-facebook-f text-xs sm:text-sm"></i>
           </a>
 
           <!-- Twitter -->
           <a href="https://twitter.com" target="_blank"
-            class="flex items-center justify-center w-8 h-8 rounded-full bg-white text-sky-500 border border-sky-500 hover:bg-sky-500 hover:text-white transition duration-300">
-            <i class="fab fa-twitter"></i>
+            class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white text-sky-500 border border-sky-500 hover:bg-sky-500 hover:text-white transition duration-300">
+            <i class="fab fa-twitter text-xs sm:text-sm"></i>
           </a>
         </div>
       </div>
@@ -34,120 +38,69 @@
 
     <!-- Main Navbar -->
     <nav class="bg-white shadow-md">
-      <div class="max-w-9/10 mx-auto px-4 py-1 flex justify-between items-center">
-        <img src="../../public/remove background fr.png" alt="Raj Hotel Logo" class="h-20" />
-        <!-- <h1 class="text-2xl font-bold text-[#2C1A4D]">Raj Hotel</h1> -->
+      <div class="max-w-9/10 mx-auto px-4 py-2 flex justify-between items-center">
+        <img src="../../public/remove background fr.png" alt="Raj Hotel Logo" class="h-14 sm:h-20" />
 
         <ul class="hidden md:flex space-x-6">
-          <li>
-            <RouterLink to="/" :class="[
+          <li v-for="item in navItems" :key="item.name">
+            <RouterLink :to="item.to" :class="[
               'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'home'
+              activeLink === item.name
                 ? 'text-blue-600 font-semibold after:w-full'
                 : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('home')">
-              Home
+            ]" @click="setActive(item.name)">
+              {{ item.label }}
               <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'home' ? 'w-full' : ''"></span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/about" :class="[
-              'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'about'
-                ? 'text-blue-600 font-semibold after:w-full'
-                : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('about')">
-              About Us
-              <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'about' ? 'w-full' : ''"></span>
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/amenities" :class="[
-              'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'amenities'
-                ? 'text-blue-600 font-semibold after:w-full'
-                : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('amenities')">
-              Amenities
-              <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'amenities' ? 'w-full' : ''"></span>
-            </RouterLink>
-          </li>
-
-          <li>
-            <RouterLink to="/tariff" :class="[
-              'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'tariff'
-                ? 'text-blue-600 font-semibold after:w-full'
-                : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('tariff')">
-              Tariff
-              <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'tariff' ? 'w-full' : ''"></span>
-            </RouterLink>
-          </li>
-
-          <li>
-            <RouterLink to="/gallery" :class="[
-              'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'gallery'
-                ? 'text-blue-600 font-semibold after:w-full'
-                : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('gallery')">
-              Gallery
-              <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'gallery' ? 'w-full' : ''"></span>
-            </RouterLink>
-          </li>
-
-          <li>
-            <RouterLink to="/blog" :class="[
-              'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'blog'
-                ? 'text-blue-600 font-semibold after:w-full'
-                : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('blog')">
-              Blog
-              <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'blog' ? 'w-full' : ''"></span>
-            </RouterLink>
-          </li>
-
-          <!-- <li>
-            <a href="#rooms" :class="[
-              'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'rooms'
-                ? 'text-blue-600 font-semibold after:w-full'
-                : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('rooms')">
-              Rooms
-              <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'rooms' ? 'w-full' : ''"></span>
-            </a>
-          </li> -->
-
-          <li>
-            <RouterLink to="/contact" :class="[
-              'relative text-gray-700 font-medium pb-4 transition duration-300',
-              activeLink === 'contact'
-                ? 'text-blue-600 font-semibold after:w-full'
-                : 'hover:text-[#2c1a4deb] hover:after:w-full',
-            ]" @click="setActive('contact')">
-              Contact Us
-              <span class="absolute left-0 bottom-0 h-0.5 bg-[#2c1a4deb] w-0 transition-all duration-300"
-                :class="activeLink === 'contact' ? 'w-full' : ''"></span>
+                :class="activeLink === item.name ? 'w-full' : ''"></span>
             </RouterLink>
           </li>
         </ul>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-[#2C1A4D] text-2xl focus:outline-none" @click="toggleMenu">
+          <i :class="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div v-if="isMenuOpen"
+        class="md:hidden bg-white border-t border-gray-200 flex flex-col items-center py-3 space-y-3 shadow-md">
+        <RouterLink v-for="item in navItems" :key="item.name" :to="item.to"
+          class="text-gray-700 font-medium text-lg hover:text-[#2c1a4deb] transition"
+          @click="() => { setActive(item.name); toggleMenu(); }">
+          {{ item.label }}
+        </RouterLink>
       </div>
     </nav>
   </header>
 </template>
+
 <script setup>
 import { ref } from "vue";
-import { RouterLink } from 'vue-router'
+import { RouterLink } from "vue-router";
+
 const activeLink = ref("home");
+const isMenuOpen = ref(false);
+
 const setActive = (link) => (activeLink.value = link);
+const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
+
+const navItems = [
+  { name: "home", label: "Home", to: "/" },
+  { name: "about", label: "About Us", to: "/about" },
+  { name: "amenities", label: "Amenities", to: "/amenities" },
+  { name: "tariff", label: "Tariff", to: "/tariff" },
+  { name: "gallery", label: "Gallery", to: "/gallery" },
+  { name: "blog", label: "Blog", to: "/blog" },
+  { name: "contact", label: "Contact Us", to: "/contact" },
+];
 </script>
+
+<style scoped>
+/* Smooth mobile menu animation (optional) */
+@media (max-width: 768px) {
+  nav .md\\:hidden {
+    transition: all 0.3s ease;
+  }
+}
+</style>
