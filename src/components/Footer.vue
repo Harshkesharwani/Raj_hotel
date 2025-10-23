@@ -15,11 +15,21 @@
       <div>
         <h3 class="font-bold text-lg mb-4">USEFUL LINKS</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/" class="hover:text-green-700">Home</a></li>
-          <li><a href="/about" class="hover:text-green-700">About Us</a></li>
-          <li><a href="/amenities" class="hover:text-green-700">Amenities</a></li>
-          <li><a href="/gallery" class="hover:text-green-700">Gallery</a></li>
-          <li><a href="/contact" class="hover:text-green-700">Contact Us</a></li>
+          <li>
+            <RouterLink to="/" class="hover:text-purple-900">Home</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/about" class="hover:text-purple-900">About Us</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/amenities" class="hover:text-purple-900">Amenities</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/gallery" class="hover:text-purple-900">Gallery</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/contact" class="hover:text-purple-900">Contact Us</RouterLink>
+          </li>
         </ul>
       </div>
 
@@ -27,9 +37,9 @@
       <div>
         <h3 class="font-bold text-lg mb-4">POLICY LINKS</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-green-700">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-green-700">Terms And Conditions</a></li>
-          <li><a href="#" class="hover:text-green-700">Refund</a></li>
+          <li><a href="#" class="hover:text-purple-900">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-purple-900">Terms And Conditions</a></li>
+          <li><a href="#" class="hover:text-purple-900">Refund</a></li>
         </ul>
       </div>
 
@@ -37,19 +47,31 @@
       <div>
         <h3 class="font-bold text-lg mb-4">CONTACT INFO</h3>
         <ul class="space-y-2 text-sm">
-          <li class="flex items-center gap-2">📞 <span>+91 88998 30959</span></li>
-          <li class="flex items-center gap-2">📧 <span>rajhotel1976@gmail.com</span></li>
           <li class="flex items-center gap-2">
-            📍 <span>Nalthi, Bhadarwah, Jammu & Kashmir, 182222</span>
+            📞
+            <a href="tel:+918899830959" class="hover:underline hover:text-purple-500">
+              +91 88998 30959
+            </a>
+          </li>
+          <li class="flex items-center gap-2">
+            📧
+            <a href="mailto:rajhotel1976@gmail.com" class="hover:underline hover:text-purple-500">
+              rajhotel1976@gmail.com
+            </a>
+          </li>
+          <li class="flex items-center gap-2">
+            📍 <a href="https://maps.app.goo.gl/L4yarH51hJvvrbCj6">Nalthi, Bhadarwah, Jammu
+              &
+              Kashmir, 182222</a>
           </li>
           <li class="flex items-center gap-2">🕒 <span>24*7*365</span></li>
         </ul>
         <div class="flex gap-3 mt-4">
-          <a href="https://www.facebook.com"
+          <a href="https://www.facebook.com/share/1GYu7bRzP7/"
             class="bg-[#2C1A4D] text-white w-9 h-9 flex items-center justify-center rounded-full hover:bg-[#3b2470] transition">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="https://www.instagram.com"
+          <a href="https://www.instagram.com/rajhotelbhaderwah/"
             class="bg-[#2C1A4D] text-white w-9 h-9 flex items-center justify-center rounded-full hover:bg-[#3b2470] transition">
             <i class="fab fa-instagram text-lg"></i>
           </a>
@@ -59,10 +81,8 @@
       <!-- MAP -->
       <div>
         <h3 class="font-bold text-lg mb-4">DIRECTIONS</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.2640787089814!2d75.6210803!3d33.0577417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391da9dc3e86a65b%3A0x224f5c324fde620f!2sRaj%20Hotel!5e0!3m2!1sen!2sin!4v1697342983459!5m2!1sen!2sin"
-          width="100%" height="200" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          class="rounded-lg"></iframe>
+        <iframe src="https://www.google.com/maps?q=32.9468068,75.7172122&z=15&output=embed" width="100%" height="200"
+          style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
       </div>
     </div>
 

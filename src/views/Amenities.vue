@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-purple-950 flex-1 pt-28 pb-10">
+  <div class="min-h-screen bg-purple-950 flex-1 pt-36">
     <!-- Amenities Header -->
     <section class="py-12 px-6 md:px-16 text-white text-center md:text-left">
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">Amenities</h1>
@@ -38,8 +38,8 @@
 const facilityList = [
   {
     icon: 'fas fa-mug-hot fa-2xl',
-    title: 'Free Complementary Drink (Kashmiri Kehwa)',
-    desc: 'A warm welcome drink served to every guest upon arrival.',
+    title: 'Drink (Kashmiri Kehwa)',
+    desc: 'A warm drink available.',
   },
   {
     icon: 'fas fa-wifi fa-2xl',

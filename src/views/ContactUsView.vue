@@ -71,8 +71,8 @@ const contactNumbers = [
 ]
 
 const contactEmails = [
-  { icon: 'fas fa-envelope', text: 'info@Rajhote.com' },
-  { icon: 'fas fa-envelope', text: 'Rajhotel1997@gmail.com' },
+  { icon: 'fas fa-envelope', text: 'info@Rajhotel.com' },
+  { icon: 'fas fa-envelope', text: 'rajhotel1976@gmail.com' },
 ]
 
 // Form data

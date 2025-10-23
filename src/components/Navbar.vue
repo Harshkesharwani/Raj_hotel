@@ -22,15 +22,15 @@
         <!-- Social Links -->
         <div class="flex space-x-3">
           <!-- Facebook -->
-          <a href="https://facebook.com" target="_blank"
-            class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
-            <i class="fab fa-facebook-f text-xs sm:text-sm"></i>
+          <a href="https://www.facebook.com/share/1GYu7bRzP7/" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#1877F2] text-white shadow-md hover:bg-[#0d5bd9] hover:scale-110 transition-transform duration-300">
+            <i class="fab fa-facebook-f text-sm sm:text-base"></i>
           </a>
 
-          <!-- Twitter -->
-          <a href="https://twitter.com" target="_blank"
-            class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white text-sky-500 border border-sky-500 hover:bg-sky-500 hover:text-white transition duration-300">
-            <i class="fab fa-twitter text-xs sm:text-sm"></i>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/rajhotelbhaderwah/" target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 text-white shadow-md hover:scale-110 transition-transform duration-300">
+            <i class="fab fa-instagram text-lg"></i>
           </a>
         </div>
       </div>
