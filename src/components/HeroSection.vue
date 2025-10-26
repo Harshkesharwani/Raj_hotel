@@ -19,10 +19,10 @@
       <p class="text-xl mb-6 text-gray-100 tracking-wide">
         Stay • Eat • Relax
       </p>
-      <a href="#rooms" class="inline-block bg-[#2C1A4D] text-white font-semibold px-8 py-3 rounded-lg
-               shadow-lg hover:bg-[#2C1A4D] hover:scale-105 transition-all duration-300">
+      <RouterLink to="/booking" class="inline-block bg-[#2C1A4D] text-white font-semibold px-8 py-3 rounded-lg
+         shadow-lg hover:bg-[#3B2168] hover:scale-105 transition-all duration-300">
         Book Now
-      </a>
+      </RouterLink>
     </div>
   </section>
 </template>

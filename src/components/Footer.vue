@@ -37,9 +37,21 @@
       <div>
         <h3 class="font-bold text-lg mb-4">POLICY LINKS</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-purple-900">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-purple-900">Terms And Conditions</a></li>
-          <li><a href="#" class="hover:text-purple-900">Refund</a></li>
+          <li>
+            <RouterLink to="/privacy-policy" class="hover:text-purple-900">
+              Privacy Policy
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/terms-conditions" class="hover:text-purple-900">
+              Terms and Conditions
+            </RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/refund-policy" class="hover:text-purple-900">
+              Refund Policy
+            </RouterLink>
+          </li>
         </ul>
       </div>
 
@@ -95,12 +107,14 @@
       </a>
 
       <!-- Call Button -->
-      <a href="#"
-        class="flex items-center justify-center w-16 h-16 rounded-full bg-black text-white shadow-lg hover:bg-white hover:text-black transition duration-300">
+      <RouterLink to="/booking"
+        class="relative flex items-center justify-center w-16 h-16 rounded-full bg-black text-white shadow-lg hover:bg-white hover:text-black transition duration-300">
         <i class="fas fa-shopping-cart text-2xl"></i>
         <span
-          class="absolute -top-1 -right-1 bg-green-500 text-xs rounded-full w-6 h-6 flex items-center justify-center">0</span>
-      </a>
+          class="absolute -top-1 -right-1 bg-green-500 text-xs rounded-full w-6 h-6 flex items-center justify-center">
+          {{ cartStore.cartCount }}
+        </span>
+      </RouterLink>
     </div>
     <!-- Bottom Bar -->
     <div class="bg-[#2C1A4D] text-white text-center py-3 mt-10 text-sm">
@@ -108,3 +122,8 @@
     </div>
   </footer>
 </template>
+<script setup lang="ts">
+import { useCartStore } from "@/stores/cartStore"
+
+const cartStore = useCartStore();
+</script>

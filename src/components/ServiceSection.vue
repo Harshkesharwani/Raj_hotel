@@ -69,7 +69,7 @@
             </div>
 
             <!-- Button -->
-            <div class="transition-all duration-700 delay-500"
+            <!-- <div class="transition-all duration-700 delay-500"
               :class="visibleCards.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'">
               <button
                 class="bg-white hover:bg-gray-100 text-[#2C1A4D] font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group">
@@ -81,7 +81,7 @@
                   </svg>
                 </span>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

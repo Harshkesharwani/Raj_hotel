@@ -32,10 +32,10 @@
             <p class="text-base md:text-lg leading-relaxed">
               Experience comfort, taste, and tranquility at <strong>Raj Hotel, Bhaderwah</strong>.
             </p>
-            <button
-              class="bg-[#fbbf24] hover:bg-[#facc15] text-[#2C1A4D] font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <RouterLink to="/about" class="inline-block bg-[#fbbf24] hover:bg-[#facc15] text-[#2C1A4D] font-semibold py-3 px-8 rounded-lg
+         transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
               About Us
-            </button>
+            </RouterLink>
           </div>
         </div>
 
@@ -73,10 +73,10 @@
           <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-[#2C1A4D] text-center md:text-left">
             Craving great food and comfort in Bhaderwah? Raj Hotel is the place for you.
           </h2>
-          <button
-            class="bg-[#2C1A4D] hover:bg-[#432a6e] text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap">
+          <a href="tel:+918899830959" class="inline-block bg-[#2C1A4D] hover:bg-[#432a6e] text-white font-semibold py-3 px-8 rounded-lg
+         transition-all duration-300 transform hover:scale-105 shadow-lg whitespace-nowrap">
             Call Us Now
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -19,10 +19,10 @@
           Whether you’re here for leisure or business, we strive to make your stay relaxing and memorable, surrounded by
           the serene beauty of Bhaderwah.
         </p>
-        <button
-          class="bg-white text-[#2c1a4d] font-semibold px-6 py-2 rounded shadow hover:bg-gray-200 transition duration-300 w-fit">
+        <RouterLink to="/contact" class="inline-block bg-white text-[#2c1a4d] font-semibold px-6 py-2 rounded shadow
+         hover:bg-gray-200 transition duration-300 w-fit text-center">
           Contact Us
-        </button>
+        </RouterLink>
       </div>
 
       <!-- Right Section -->

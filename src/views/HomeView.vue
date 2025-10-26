@@ -6,7 +6,7 @@
     <AboutSection />
     <ServiceSection />
     <!-- <RoomsSection /> -->
-    <FacilateAndTestimonial />
+    <!-- <FacilateAndTestimonial /> -->
     <ContactSection />
   </main>
 </template>
